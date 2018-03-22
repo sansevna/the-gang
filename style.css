@@ -64,6 +64,11 @@ border: none;
 cursor: pointer;
 }
 
+a.cta:active,
+button.cta:active{
+	opacity: .7;
+}
+
 a.cta.alt,
 button.cta.alt{
 	background-color: #FFD400;
@@ -108,6 +113,7 @@ nav{
 	box-shadow: 0 5px 8px rgba(0, 0, 0,.2);
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 nav .logo{
@@ -159,4 +165,79 @@ nav ul li a{
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #FF0000;
+}
+
+.sep{
+	width: 500px;
+	height: 2px;
+	background-color: black;
+	margin: 60px auto;
+
+}
+
+.story h3{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.nb-list{
+	width: 470px;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	background-color: #EDEDED;
+	float: left;
+	margin: 0px 30px 5px 0;
+	position: relative;
+}
+
+.nb-list li{
+	height: 70px;
+	border-radius: 10px;
+	font-size: 40px;
+	color: white;
+	display: block;
+	margin-bottom: 20px;
+	padding: 6px 20px;
+	box-sizing: border-box;
+}
+
+.nb-list li.red{background-color: #FF3300;}
+.nb-list li.blue{background-color: #007FFF;}
+.nb-list li.gray{background-color: rgba(0,0,0,.1);}
+.nb-list li.yellow{
+	background-color: #FFD400;
+	color: black;
+}
+.nb-list li.pink{background-color: #FFADF9;}
+.nb-list li.salmon{background-color: #FA8072;}
+
+.nb-list li.dragging{
+	position: absolute;
+	top: 70px;
+	left: 70px;
+    right: -30px;
+    transform: rotate(6deg);
+    box-shadow: 0 2px 14px rgba(0,0,0,.3);
+}
+
+.nb-list li.dragging:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 54px;
+	height: 50px;
+	background: url(img/hand.png) no-repeat 0 0;
+	background-size: 100%;
+	bottom: -30px;
+	left:60%;
+}
+
+
+.gang-img{
+	display: block;
+	margin: 50px auto;
+}
+
+.popup{
+	display: none;
 }
